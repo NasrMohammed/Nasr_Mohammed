@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JQuery Mobile Demo</title>
+		
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
+		<link href="css/forms.css" rel="stylesheet" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>		
+		<script src="js/jquery.mobile-1.4.5.js"></script>
+		<script src="js/forms.js"></script>
+	</head>
+	<body>
+		<div id="Pagecontainer"> 
+			<div id="page1" data-role="page" data-theme="a">
+				<div data-role="header" data-position="fixed">			
+					<img src="images/header.png" /> 
+				</div> <!-- end of header div -->
+				
+				<div data-role="content" >
+				<h3> Jobs Available </h3>
+					<div data-role="content" >
+					<div data-role="collapsible-set">
+						<div data-role="collapsible">
+						    <h3>Contact Center Jobs</h3>
+		  <a href="#page3"> <p> Sales Representative </p> </a>
+		  <a href="#page3">	<p>Center Sales Agent </p>  </a>
+		  <a href="#page3">	<p>CReservations Agents </p> </a>
+						</div>
+						<div data-role="collapsible">
+							<h3>IT Jobs</h3>
+		<a href="#page3"> <p>Center Sales </p> </a>
+		<a href="#page3"> <p>Java Developer </p> </a>
+		<a href="#page3"> <p>.Net Developer </p> </a>
+						</div>
+						<div data-role="collapsible">
+							<h3>Sales Jobs</h3>
+		<a href="#page3">	<p>Sales Reservations </p> </a>
+		<a href="#page3">   <p>Sales Manager </p> </a>
+		<a href="#page3">	<p>Sales Researcher </p> </a>
+						</div>
+						
+					</div>
+				</div> <!-- end of container div -->
+					
+					
+					
+				</div> <!-- end of container div -->
+				
+				<div data-role="footer" data-position="fixed"  class ="ui-bar">
+					<a href="#page2" data-icon="arrow-r" data-iconpos="right" >Next</a>
+				</div> <!-- end of footer div -->
+		
+			</div> <!-- end of page div -->
+			<div id="page2" data-role="page" data-theme="c">
+				<div data-role="header2" data-position="fixed">			
+					<img src="images/header.png" /> 
+				</div> <!-- end of header div -->
+				
+				<div data-role="content" >
+					<div data-role="collapsible-set">
+						<div data-role="collapsible">
+							<h3>Basic Information</h3>
+							<p>Something here </p>
+							<p>Something here </p>
+							<p>Something here </p>
+						</div>
+						<div data-role="collapsible">
+							<h3>Education</h3>
+							<p>Something here </p>
+							<p>Something here </p>
+							<p>Something here </p>
+						</div>
+						<div data-role="collapsible">
+							<h3>References</h3>
+							<p>Something here </p>
+							<p>Something here </p>
+							<p>Something here </p>
+						</div>
+						<div data-role="collapsible">
+							<h3>Previous Employment</h3>
+							<p>Something here </p>
+							<p>Something here </p>
+							<p>Something here </p>
+						</div>
+						<div data-role="collapsible">
+							<h3>Military Service</h3>
+							
+							<p>Something here </p>
+							<p>Something here </p>
+							<p>Something here </p>
+						</div>
+						<div data-role="collapsible">
+							<h3>Disclaimer and Signature</h3>
+							
+							<p>Something here </p>
+							<p>Something here </p>
+							<p>Something here </p>
+						</div>
+						
+						<a id="btnSubmit" data-role="button">Submit Application</a>
+					</div>
+				</div> <!-- end of container div -->
+				
+				<div data-role="footer" data-position="fixed"  class ="ui-bar">
+					<a  style="float: left;" data-icon="arrow-l" data-rel="back" >Back</a>
+					<a href="#page3" style="float: right;" data-icon="arrow-r" data-iconpos="right" >Next</a>
+				</div> <!-- end of footer div -->
+				
+					
+				
+		
+			</div> <!-- end of page2 div -->
+			<div id="page3" data-role="page" data-theme="b">
+				<div data-role="header2" data-position="fixed">			
+					<img src="images/header.png" />
+					<h4> Jobs Opening</h4>
+				</div> <!-- end of header div -->
+				
+				<div id="form1">
+					<p>I can verify my legal right to work in the US. </p>
+								
+						<input type="radio" name="radio-choice-0" id="radio-choice-0a" />
+						<label for="radio-choice-0a">Yes</label>
+						<input type="radio" name="radio-choice-0" id="radio-choice-0b" />
+						<label for="radio-choice-0b">No</label>														
+				</div>
+				<div id="form2">
+						<p>	U-HAUL® is a drug free environment. </p>
+								
+						<input type="radio" name="radio-choice-1" id="radio-choice-0" />
+						<label for="radio-choice-0">Yes</label>
+						<input type="radio" name="radio-choice-1" id="radio-choice" />
+						<label for="radio-choice">No</label>
+
+					<p>	I have a valid driver's license. </p>
+								
+						<input type="radio" name="radio-choice-2" id="radio-choice11" />
+						<label for="radio-choice11">Yes</label>
+						<input type="radio" name="radio-choice-2" id="radio01" />
+						<label for="radio01">No</label>
+							
+					<a href="#page2" data-role="button" data-inline="true" data-theme="b">Continue</a>
+				</div>
+				<div data-role="footer" data-position="fixed"  class ="ui-bar">
+					<a  style="float: right;" data-icon="arrow-l" data-rel="back" >Back</a>
+				</div> <!-- end of footer div -->
+		
+			</div> <!-- end of page3 div -->
+		</div>	<!-- end of Pagecontainer div -->
+		</div>	<!-- end of Pagecontainer div -->
+		
+		
+	</body>
+</html>
+
+
+
+

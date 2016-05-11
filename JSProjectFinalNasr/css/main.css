@@ -1,0 +1,221 @@
+
+	body{
+		margin:0;
+		font-family: Arial,Helvetica,freesans,sans-serif;	
+		}
+
+	#topbar{
+		background-color:#FFFFFF;
+		width:100%;
+		height: 38px;
+		color:white;
+		border-bottom:1px solid #CCCCCC;
+	}
+
+	.fixedwidth {
+		width: 1060px;
+		margin: 0 auto;
+	}
+
+	#logodiv{
+		padding: 6px 80px 4px 0;
+		float: left;
+		border-right: 1px solid #CCCCCC;
+		padding-right: 10px;
+	}
+	
+	.topmenu {
+		float: left; 
+		color: #1E0202;
+		
+	}
+	
+	.topmenu ul{
+		margin:0;
+		padding: 0;
+		
+	}
+	
+	.topmenu li{
+		list-style: none;
+		font-weight: bold;
+		font-size: 0.9em;
+		border-right: 1px solid #CCCCCC;
+		height: 100%;
+		padding: 10px 20px 12px 20px;
+		float: left;
+	}
+	
+	.emptydiv {
+		font-weight:bold;
+		border-right: 1px solid #CCCCCC;
+		padding: 15px 10px 4px 10px;
+		font-size: 0.9 em;
+		float: left;
+	}
+	
+	.break{
+		clear: both;
+	}
+	
+	#shopbar{
+		width:100%;
+		height: 80px;	
+	}
+	
+	#shopimage {
+		padding: 10px 0 0 0; 
+		float: left;
+	}
+	#shoptext  {
+		float: left;
+		font-size: 0.9em;
+		font-weight: bold;
+		
+	}
+	
+	#shopsearch{
+		float: right;
+		padding: 5px 0 0 10px;		
+	}	
+
+	#shopsearch input {
+		height: 30px;
+		width: 550px;
+		border: none;
+		padding-left: 10px;
+		border: 1px solid #493030;
+		font-size: 0.9 em;
+		background-image:url("Images/magnify.PNG");
+		background-repeat: no-repeat;
+		background-position: right center;
+		position: relative;
+		top: 8px;
+	}
+	
+	#shopsearch ul{
+		margin:0;
+		padding: 0;		
+	}
+	
+	#shopsearch li{
+		list-style: none;
+		font-weight: bold;
+		font-size: 0.8em;
+		height: 100%;
+		padding: 15px 20px 12px 20px;
+		float: left;
+		border-right: 1px solid #CCCCCC;
+	}
+	
+	#dollarsign  {	
+		padding: 50px 10px 0 0; 
+		float: right;		
+	}
+	#dollarsign p {
+		float: right;
+		font-size: 0.9em;
+		font-weight: bold;
+		position: relative;
+		top: -12px;
+		left: 10px;	
+	}
+	#checkpic {
+		position: relative;
+		top: 8px;
+		padding-right: 40px;
+	}
+	
+	#chechouttext {
+		position: relative;
+		top: -15px;
+		padding-left: 40px;
+
+	}
+	
+	.top_menu ul{
+		margin:0;
+		padding: 0;
+		
+	}
+	
+	.top_menu li{
+		list-style: none;
+		font-weight: bold;
+		font-size: 0.9em;
+		background-color: #494949;
+		color: white;
+		border-right: 1px solid #1F2A33;
+		height: 100%;
+		padding: 10px 20px 12px 20px;
+		float: left;
+		position: relative;
+		top: -15px;
+	}
+	
+	#freeshipping {
+		border-right:none;
+		background-color: #BD2577;
+	}
+	#shippingbody {
+		margin:0;
+		padding: 0;
+	}
+	#rightbar {
+		position: relative;
+		top: -8px;
+		float: left;
+	}
+	#leftbar {
+		position: relative;
+		top: -8px;
+		float: right;
+		padding-bottom: 20px;
+
+	}
+	
+	#summer {		
+		float: right;
+		padding-bottom: 20px;
+	}
+	#ShopNow {
+		float: right;
+	}
+	.CompanyBar {
+		margin:0;
+		padding: 0;
+		width: 100%;
+		height: 125px;
+	}
+	.Company_menu  {
+		border: 1px solid black;
+		list-style: none;
+		float: right
+		width: 100%;
+
+	}
+	
+	.image1 {
+		border-right: 1px solid black;
+		padding: 0 15px 0 0;
+	}
+	.image2 {
+		border-right: 1px solid black;
+		padding: 0 15px 0 0;
+	}
+	.image3 {
+		border-right: 1px solid black;
+		padding: 0 15px 0 0;
+	}
+	.image4 {
+		border-right: 1px solid black;
+		padding: 0 15px 0 0;
+	}
+	.image5 {
+		border-right: 1px solid black;
+		padding: 0 15px 0 0;
+	}
+	.image6 {
+		padding: 0 15px 0 0;
+	}
+	

@@ -1,0 +1,57 @@
+﻿<Window x:Class="StudentRegistrationSystem.Main"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Main" Height="500" Width="783.09">
+    <Grid Margin="0,0,13,0">
+
+
+        <Label x:Name="userName" Content="User Name: " HorizontalAlignment="Left" Margin="25,20,0,0" VerticalAlignment="Top" Height="26" Width="93"/>
+        <TextBox x:Name="txtUserName" HorizontalAlignment="Left" Height="23" Margin="25,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="MajorID" Content="Major ID: " HorizontalAlignment="Left" Margin="142,20,0,0" VerticalAlignment="Top" Height="26" Width="93"/>
+        <Label x:Name="firstName" Content="First Name: " HorizontalAlignment="Left" Margin="285,20,0,0" VerticalAlignment="Top" Height="26" Width="93"/>
+        <Label x:Name="lastName" Content="LastName: " HorizontalAlignment="Left" Margin="411,20,0,0" VerticalAlignment="Top" Height="26" Width="93"/>
+        <Label x:Name="phone" Content="Phone: " HorizontalAlignment="Left" Margin="20,75,0,0" VerticalAlignment="Top" Height="26" Width="93"/>
+        <Label x:Name="email" Content="Email: " HorizontalAlignment="Left" Margin="150,70,0,0" VerticalAlignment="Top" Height="26" Width="93"/>
+        <Label x:Name="address" Content="Address: " HorizontalAlignment="Left" Margin="275,75,0,0" VerticalAlignment="Top" Height="26" Width="93"/>
+        <TextBox x:Name="txtMajorID" HorizontalAlignment="Left" Height="23" Margin="150,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtFirstName" HorizontalAlignment="Left" Height="23" Margin="275,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtLastName" HorizontalAlignment="Left" Height="23" Margin="400,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtPhone" HorizontalAlignment="Left" Height="23" Margin="20,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="23" Margin="150,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtAddress" HorizontalAlignment="Left" Height="23" Margin="275,100,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnAddStudent" Content="Add Student" HorizontalAlignment="Left" Margin="400,100,0,0" VerticalAlignment="Top" Width="115" Click="btnAddStudent_Click"/>
+        <DataGrid x:Name="grdStudents" HorizontalAlignment="Left" Margin="20,136,0,0" VerticalAlignment="Top" Height="148" Width="718" SelectionChanged="grdStudents_SelectionChanged" SelectionMode="Single" />
+        <Button Content="Show Students Record" HorizontalAlignment="Left" Margin="480,293,0,0" VerticalAlignment="Top" Width="138" Click="Button_Click" Height="32"/>
+
+        <GroupBox Header="Student Type" HorizontalAlignment="Left" Margin="30,300,0,0" VerticalAlignment="Top" Height="86" Width="120">
+            <StackPanel Margin="0,0,0,-3" >
+                <RadioButton GroupName="RecordType" x:Name="radActive" Content="Active" IsChecked="True" />
+                <RadioButton GroupName="RecordType" x:Name="radInactive" Content="Inactive"  />
+                <RadioButton GroupName="RecordType" x:Name="radAll" Content="All" />
+            </StackPanel>
+        </GroupBox>
+        <Button Content="Get Student Count" HorizontalAlignment="Left" Margin="30,395,0,0" VerticalAlignment="Top" Width="120" Click="GetStudentCount_Click"/>
+        <Label x:Name="lblStudentCount" Content="Count: " HorizontalAlignment="Left" Margin="30,427,0,0" VerticalAlignment="Top" Height="26" Width="65"/>
+        <TextBox x:Name="txtUserID" HorizontalAlignment="Left" Height="23" Margin="560,330,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="165"/>
+
+        <Label Content="StudentID&#xD;&#xA;" HorizontalAlignment="Left" Margin="480,330,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.505,-0.055" Width="85" Height="29"/>
+        <TextBox x:Name="txtEmailAddress" HorizontalAlignment="Left" Height="23" Margin="260,300,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="165"/>
+        <Label Content="Email Address&#xA;" HorizontalAlignment="Left" Margin="160,300,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.505,-0.055" Width="96" Height="28"/>
+        <Button x:Name="btnUpdateEmail" Content="Update Student Record
+                " HorizontalAlignment="Left" Margin="260,423,0,0" VerticalAlignment="Top" Width="165" Click="btnUpdateRecord_Click" Height="30"/>
+        <TextBox x:Name="txtUserNameUp" HorizontalAlignment="Left" Height="23" Margin="560,360,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="165"/>
+        <Label Content="User Name" HorizontalAlignment="Left" Margin="480,360,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.505,-0.055" Width="75" Height="28"/>
+        <TextBox x:Name="txtFirstNameUp" HorizontalAlignment="Left" Height="23" Margin="560,390,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="165"/>
+        <Label Content="First Name" HorizontalAlignment="Left" Margin="480,390,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.505,-0.055" Width="82" Height="28"/>
+        <TextBox x:Name="txtPhoneUp" HorizontalAlignment="Left" Height="23" Margin="260,330,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="165"/>
+        <Label Content="Phone" HorizontalAlignment="Left" Margin="160,330,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.505,-0.055" Width="96" Height="28"/>
+        <TextBox x:Name="txtAddressUp" HorizontalAlignment="Left" Height="23" Margin="260,360,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="165"/>
+        <Label Content="Address" HorizontalAlignment="Left" Margin="160,360,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.505,-0.055" Width="96" Height="28"/>
+        <TextBox x:Name="txtLastNameUp" HorizontalAlignment="Left" Height="23" Margin="260,390,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="165"/>
+        <Label Content="Last Name" HorizontalAlignment="Left" Margin="160,390,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.505,-0.055" Width="82" Height="28"/>
+        <TextBox x:Name="txtUserIDDelete" HorizontalAlignment="Left" Height="23" Margin="614,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="115"/>
+        <Label Content="StudentID" HorizontalAlignment="Left" Margin="630,20,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.505,-0.055" Width="100" Height="29"/>
+        <Button x:Name="btnDeleteStudent" Content="Delete Student" HorizontalAlignment="Left" Margin="614,75,0,0" VerticalAlignment="Top" Width="115" Click="btnDeleteStudent_Click"/>
+
+    </Grid>
+</Window>

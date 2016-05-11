@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Membership Form</title>
+		<link href="css/jquery-ui.css" rel="stylesheet">
+		<link href="css/forms.css" rel="stylesheet" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="js/jquery-ui.js"></script>
+		<script src="js/jquery.validate.js"></script>
+		<!-- <script src="js/jquery.validate.js"></script> -->
+		<script src="js/forms.js"></script>
+	</head>
+	<body>
+		<div id="page" class="table">
+		<div id="header">
+			
+			<a href="test.html"><img src="images/header1.png" /> </a>
+		</div>
+			<div id="tabs">
+				<ul>
+					<li><a href="#tab1">Applicant Information </a></li>
+					<li><a href="#tab2">Education </a></li>
+					<li><a href="#tab3">References </a></li>
+					<li><a href="#tab4">Previous Employment </a></li>
+					<li><a href="#tab5">Military Service </a></li>
+					<li><a href="#tab6">Disclaimer and Signature </a></li>						
+				</ul>
+					<div id="tab1">
+						<h3> Applicant Information</h3>
+						<form id="tabForm1">
+						<fieldset  style="border: 2px ivory solid">
+							<legend style="border: 2px ivory solid; 
+								margin-left: 1em; padding: 0.2em 0.8em ">Personal Information</legend>
+								
+							<label for="fname">Last Name: <span class="red-star">*</span> </label> <br> 
+							<input id="lname" type="text" name="lname" required title="Please enter your last name"/> <br>
+							 
+							<label for="mname" >MI: </label> <br> 
+							<input id="mi" type="text" name="mi" /><br> 
+							
+							<label for="lname" >First Name: <span class="red-star">*</span> </label> <br>
+							<input id="fname" type="text" name="fname" required title="Please enter your first name"/> <br>
+						
+							<label for="social" >Social Security No: <span class="red-star">*</span> </label><br>
+							<input id="social" type="number" name="social" required maxlength="9" minlength="9"/> <br>
+						</fieldset> <br>
+						<fieldset  style="border: 2px ivory solid">
+							<legend style="border: 2px ivory solid; 
+								margin-left: 1em; padding: 0.2em 0.8em ">Contact Information</legend>
+								
+							<label for="address"  >Street address: <span class="red-star">*</span> </label> <br>
+							<input id="address" type="text" name="address" required title="Please enter your address"/><br>  
+							
+							<label for="apartment"  >Apartment/Unit #: </label> <br>
+							<input id="apartment" type="text" name="apartment" /> <br>
+ 
+							<label for="city"  >City: <span class="red-star">*</span> </label> <br>
+							<input id="city" type="text" name="city" required title="Please enter your city"/> <br>
+
+							<label for="state" >State: </label> <span class="red-star">*</span> <br>
+							<select id="state" required title="Please enter your state">
+								<option value="AL">Select</option>
+								<option value="AL">Alabama</option>
+								<option value="AK">Alaska</option>
+								<option value="AZ">Arizona</option>
+								<option value="AR">Arkansas</option>
+								<option value="CA">California</option>
+								<option value="CO">Colorado</option>
+								<option value="CT">Connecticut</option>
+								<option value="DE">Delaware</option>
+								<option value="DC">District Of Columbia</option>
+								<option value="FL">Florida</option>
+								<option value="GA">Georgia</option>
+								<option value="HI">Hawaii</option>
+								<option value="ID">Idaho</option>
+								<option value="IL">Illinois</option>
+								<option value="IN">Indiana</option>
+								<option value="IA">Iowa</option>
+								<option value="KS">Kansas</option>
+								<option value="KY">Kentucky</option>
+								<option value="LA">Louisiana</option>
+								<option value="ME">Maine</option>
+								<option value="MD">Maryland</option>
+								<option value="MA">Massachusetts</option>
+								<option value="MI">Michigan</option>
+								<option value="MN">Minnesota</option>
+								<option value="MS">Mississippi</option>
+								<option value="MO">Missouri</option>
+								<option value="MT">Montana</option>
+								<option value="NE">Nebraska</option>
+								<option value="NV">Nevada</option>
+								<option value="NH">New Hampshire</option>
+								<option value="NJ">New Jersey</option>
+								<option value="NM">New Mexico</option>
+								<option value="NY">New York</option>
+								<option value="NC">North Carolina</option>
+								<option value="ND">North Dakota</option>
+								<option value="OH">Ohio</option>
+								<option value="OK">Oklahoma</option>
+								<option value="OR">Oregon</option>
+								<option value="PA">Pennsylvania</option>
+								<option value="RI">Rhode Island</option>
+								<option value="SC">South Carolina</option>
+								<option value="SD">South Dakota</option>
+								<option value="TN">Tennessee</option>
+								<option value="TX">Texas</option>
+								<option value="UT">Utah</option>
+								<option value="VT">Vermont</option>
+								<option value="VA">Virginia</option>
+								<option value="WA">Washington</option>
+								<option value="WV">West Virginia</option>
+								<option value="WI">Wisconsin</option>
+								<option value="WY">Wyoming</option>
+							</select>	
+							<br>
+							<label for="zip" >ZIP Code: <span class="red-star">*</span> </label> <br> 
+							<input id="zip" type="number" name="zip" required maxlength="5" /> <br>
+							
+							<label for="phone" >Local phone:  </label><br>
+							<input id="phone" type="number" name="phone" required maxlength="10" minlength="10" /> <br>
+							
+							<label for="email" >Email:  </label><br>
+							<input id="email" type="email" name="email" required title="Please enter your email"/> <br>
+						</fieldset> <br>
+						<fieldset  style="border: 2px ivory solid">
+							<legend style="border: 2px ivory solid; 
+								margin-left: 1em; padding: 0.2em 0.8em ">General Information</legend>
+								
+							<label for="available" >Date Available: <span class="red-star">*</span> </label><br>
+							<input id="available" type="date" name="available" required title="Please enter your available date"/> <br>
+							
+							
+							<label for="salary" >Desired Salary :  </label><br>
+							<input id="salary" type="number" name="salary" /> <br>
+							
+							<label for="position" >Position Applied for: <span class="red-star">*</span> </label><br>
+							<input id="position" type="text" name="position" required title="Please enter position you want to aplly for"/> <br>
+							
+							<label for="citizen" >Are you a citizen of the United States?: </label><br>
+							
+							 <input type="checkbox" id="yes" name="citizen" value="yes" > Yes<br>
+							 <input type="checkbox" id="no" name="citizen" value="no" > No<br>
+							<br> <br>
+							<div class="hidden" id="authorized">
+								
+								<label>If no, are you authorized to work in the U.S.? </label><br>
+								<input type="checkbox" id="yes1" name="legal" value="yes" > Yes<br>
+								<input type="checkbox" id="no1" name="legal" value="no" > No<br>
+								<br />
+							</div>
+							
+							
+							
+							<div id="work" class="hidden">
+							
+								<label>Have you ever worked for this company? </label><br>
+								<input type="checkbox" id="y" name="le" value="yes" > Yes<br>
+								<input type="checkbox" id="n" name="le" value="no" > No<br>
+								
+								<br />
+
+						
+							</div>
+							<div class="hidden" id="auth">
+								<input type="date" id="date" name="da" value="date" > if, yes when<br>
+								<br />
+							</div>
+							
+							<div id="work2">
+							
+								<label>Have you ever been convicted of a felony </label><br>
+								<input type="checkbox" id="y4" name="lee" value="yes" > Yes<br>
+								<input type="checkbox" id="n4" name="lee" value="no" > No<br>								
+								<br />
+						
+							</div>
+							
+							<div class="hidden" id="auth2">
+								If yes, explain:<input type="text" id="daa" name="daa" value="" > <br>
+								<br />
+							</div>
+							<br>
+						
+						</fieldset>	
+						<br>
+							<input type="button" value="Continue" id="continue1" name="continue1"/>	
+						</form>
+					</div> <!-- end of tab1  -->
+					
+					<div id="tab2">
+						<h3> Education</h3>
+						<form id="tabForm2">
+							<fieldset  style="border: 2px ivory solid">
+							<legend style="border: 2px ivory solid; 
+								margin-left: 1em; padding: 0.2em 0.8em ">High School</legend>
+								<label for="name">High School Name: </label><br>
+								<input id="edu" type="text" name="edu" required title="Please enter your high school name"/> <br>
+								<br>
+								<label for="address">Address: </label><br>
+								<input id="edu1" type="text" name="edu1" required title="please enter your school address"/> <br>
+								<br>
+								<label for="from">From: </label><br>
+								<input id="edu2" type="date" name="edu2" required /> <br>
+								<br>
+								<label for="to">To: </label><br>
+								<input id="edu3" type="date" name="edu3" required /> <br>
+								
+								<div id="work3">
+								
+									<label>Did you graduate </label><br>
+									<input type="checkbox" id="y5" name="leee" value="yes" > Yes<br>
+									<input type="checkbox" id="n5" name="leee" value="no" > No<br>								
+									<br />
+							
+								</div>
+								
+								<div class="hidden" id="auth3">
+									Diploma:<input type="text" id="daa" name="daa" value="" > <br>
+									<br />
+								</div>
+							</fieldset >
+							<br> <br>
+							<fieldset  style="border: 2px ivory solid">
+							<legend style="border: 2px ivory solid; 
+								margin-left: 1em; padding: 0.2em 0.8em ">College</legend>
+								
+							<label for="name">College Name: </label><br>
+							<input id="edu4" type="text" name="edu4" required title="Please enter your high college name"/> <br>
+							<br>
+							<label for="address">Address: </label><br>
+							<input id="edu5" type="text" name="edu5" required title="please enter your college address"/> <br>
+							<br>
+							<label for="from">From: </label><br>
+							<input id="edu6" type="date" name="edu6" required /> <br>
+							<br>
+							<label for="to">To: </label><br>
+							<input id="edu7" type="date" name="edu7" required  /> <br>
+							
+							<div id="work4">
+							
+								<label>Did you graduate </label><br>
+								<input type="checkbox" id="y6" name="leeee" value="yes" > Yes<br>
+								<input type="checkbox" id="n6" name="leeee" value="no" > No<br>								
+								<br />
+						
+							</div>
+							
+							<div class="hidden" id="auth4">
+								Degree:<input type="text" id="daaa" name="daaa" value="" > <br>
+								<br />
+							</div>
+							</fieldset >
+							
+							<br> <br> 
+							
+							<fieldset  style="border: 2px ivory solid">
+							<legend style="border: 2px ivory solid; 
+								margin-left: 1em; padding: 0.2em 0.8em ">Other</legend>
+							<label for="name">Other Name: </label><br>
+							<input id="edu8" type="text" name="edu8" /> <br>
+							<br>
+							<label for="address">Address: </label><br>
+							<input id="edu9" type="text" name="edu9" /> <br>
+							<br>
+							<label for="from">From: </label><br>
+							<input id="edu10" type="date" name="edu10" /> <br>
+							<br>
+							<label for="to">To: </label><br>
+							<input id="edu11" type="date" name="edu11" /> <br>
+							
+							<div id="work5">
+							
+								<label>Did you graduate </label><br>
+								<input type="checkbox" id="y7" name="ls" value="yes" > Yes<br>
+								<input type="checkbox" id="n7" name="ls" value="no" > No<br>								
+								<br />
+						
+							</div>
+							
+							<div class="hidden" id="auth5">
+								Degree:<input type="text" id="daaa" name="daaa" value="" > <br>
+								<br />
+							</div>
+							</fieldset >
+							
+							<br>
+							<input type="button" value="Back" id="back2" name="back2"/>		
+							<input type="button" value="Continue" id="continue2" name="continue2"/>							
+						</form>
+					</div> <!-- end of tab2  -->
+					<div id="tab3">
+						
+						<h3> Please list three professional references.</h3>
+						<form id="tabForm3">
+							<fieldset  style="border: 2px ivory solid">
+							<legend style="border: 2px ivory solid; 
+								margin-left: 1em; padding: 0.2em 0.8em ">Reference 1</legend>
+							
+							<label for="name">Full Name: </label><br>
+							<input id="ref1" type="text" name="ref" required title="Please enter your full reference name"/> <br>
+							<br>
+							<label for="name">Relationship: </label><br>
+							<input id="ref2" type="text" name="ref1" required title="Please enter your relationship with the reference"/> <br>
+							<br>
+							<label for="name">Company: </label><br>
+							<input id="ref3" type="text" name="ref2" required title="Company reference can't be empty"/> <br>
+							<br>
+							<label for="name">Phone: </label><br>
+							<input id="ref4" type="number" name="ref3" required maxlength="10" minlength="10"/> <br>
+							<br>
+							<label for="name">Address: </label><br>
+							<input id="ref5" type="text" name="ref4" required title="What is your reference address"/> <br>
+							</fieldset>
+							
+							<br> 
+							<fieldset  style="border: 2px ivory solid">
+							<legend style="border: 2px ivory solid; 
+								margin-left: 1em; padding: 0.2em 0.8em ">Reference 2</legend>
+
+							<label for="name">Full Name: </label><br>
+							<input id="ref01" type="text" name="ref0" required title="Please enter your full reference name"/> <br>
+							<br>
+							<label for="name">Relationship: </label><br>
+							<input id="ref12" type="text" name="ref12" required title="Please enter your relationship with the reference"/> <br>
+							<br>
+							<label for="name">Company: </label><br>
+							<input id="ref13" type="text" name="ref23" required title="Company reference can't be empty"/> <br>
+							<br>
+							<label for="name">Phone: </label><br>
+							<input id="ref14" type="number" name="ref34" required maxlength="10" minlength="10"/> <br>
+							<br>
+							<label for="name">Address: </label><br>
+							<input id="ref15" type="text" name="ref45" required title="What is your reference address"/> <br>
+							</fieldset>
+							<br> 
+							<fieldset  style="border: 2px ivory solid">
+							<legend style="border: 2px ivory solid; 
+								margin-left: 1em; padding: 0.2em 0.8em ">Reference 3</legend>
+							<label for="name">Full Name: </label><br>
+							<input id="ref30" type="text" name="ref" required title="Please enter your full reference name"/> <br>
+							<br>
+							<label for="name">Relationship: </label><br>
+							<input id="ref22" type="text" name="ref11" required title="Please enter your relationship with the reference"/> <br>
+							<br>
+							<label for="name">Company: </label><br>
+							<input id="ref33" type="text" name="ref22" required title="Company reference can't be empty"/> <br>
+							<br>
+							<label for="name">Phone: </label><br>
+							<input id="ref44" type="number" name="ref33" required maxlength="10" minlength="10"/> <br>
+							<br>
+							<label for="name">Address: </label><br>
+							<input id="ref55" type="text" name="ref44" required title="What is your reference address"/> <br>
+						    </fieldset>
+
+							<br>
+							<input type="button" value="Back" id="back3" name="back3"/>	
+							<input type="button" value="Continue" id="continue3" name="continue3"/>							
+						</form>
+					</div>  <!-- end of tab3 -->
+					<div id="tab4">
+						<h3> Previous Employment</h3>
+						<form id="tabForm4">
+							<fieldset  style="border: 2px ivory solid">
+							<legend style="border: 2px ivory solid; 
+								margin-left: 1em; padding: 0.2em 0.8em ">Company 1</legend>
+
+								<label for="name">Company Name: </label><br>
+							<input id="comp1" type="text" name="comp1" > <br>
+							<br>
+							<label for="name">Phone: </label><br>
+							<input id="comp2" type="number" name="comp2"  /> <br>
+							<br>
+							<label for="name">Address: </label><br>
+							<input id="comp3" type="text" name="comp3" /> <br>
+							<br>
+							<label for="name">Supervisor: </label><br>
+							<input id="comp4" type="text" name="comp4" /> <br>
+							<br>
+							<label for="name">Job Title: </label><br>
+							<input id="comp5" type="text" name="comp5" /> <br>
+							<br> 
+							<label for="name">Starting Salary $ </label><br>
+							<input id="comp6" type="number" name="comp6" /> <br>
+							<br> 
+							<label for="name">Ending Salary $ </label><br>
+							<input id="comp7" type="number" name="comp7" /> <br>
+							<br> 
+							<label for="name">Responsibility: </label><br>
+							<input id="comp8" type="text" name="comp8" /> <br>
+							<br> 
+							<label for="name">From: </label><br>
+							<input id="comp9" type="date" name="comp9" /> <br>
+							<br> 
+							<label for="name">To: </label><br>
+							<input id="comp10" type="date" name="comp10" /> <br>
+							<br> 
+							<label for="name">Reason for Leaving: </label><br>
+							<input id="comp11" type="text" name="comp11" /> <br>
+							<br> 
+							
+							<div id="work6">
+							
+								<label>May we contact your previous supervisor for a reference? </label><br>
+								<input type="checkbox" id="y8" name="lss" value="yes" > Yes<br>
+								<input type="checkbox" id="n8" name="lss" value="no" > No<br>								
+								<br />
+						
+							</div>
+							</fieldset>
+							<br>
+							
+							<fieldset  style="border: 2px ivory solid">
+							<legend style="border: 2px ivory solid; 
+								margin-left: 1em; padding: 0.2em 0.8em ">Company 2</legend>
+							
+							<label for="name">Company: </label><br>
+							<input id="com1" type="text" name="com1"  /> <br>
+							<br>
+							<label for="name">Phone: </label><br>
+							<input id="com2" type="number" name="com2"  /> <br>
+							<br>
+							<label for="name">Address: </label><br>
+							<input id="com3" type="text" name="com3" /> <br>
+							<br>
+							<label for="name">Supervisor: </label><br>
+							<input id="com4" type="text" name="com4" /> <br>
+							<br>
+							<label for="name">Job Title: </label><br>
+							<input id="com5" type="text" name="com5" /> <br>
+							<br> 
+							<label for="name">Starting Salary $ </label><br>
+							<input id="com6" type="number" name="com6" /> <br>
+							<br> 
+							<label for="name">Ending Salary $ </label><br>
+							<input id="com7" type="number" name="com7" /> <br>
+							<br> 
+							<label for="name">Responsibility: </label><br>
+							<input id="com8" type="text" name="com8" /> <br>
+							<br> 
+							<label for="name">From: </label><br>
+							<input id="com9" type="date" name="com9" /> <br>
+							<br> 
+							<label for="name">To: </label><br>
+							<input id="com10" type="date" name="com10" /> <br>
+							<br> 
+							<label for="name">Reason for Leaving: </label><br>
+							<input id="com11" type="text" name="com11" /> <br>
+							<br> 
+							
+							<div id="work6">
+							
+								<label>May we contact your previous supervisor for a reference? </label><br>
+								<input type="checkbox" id="y8" name="lss" value="yes" > Yes<br>
+								<input type="checkbox" id="n8" name="lss" value="no" > No<br>								
+								<br/>
+						
+							</div>
+							</fieldset>
+							<br>
+								
+							<input type="button" value="Back" id="back4" name="back4"/>	
+							<input type="button" value="Continue" id="continue4" name="continue4"/>							
+						</form>
+					</div>  <!-- end of tab4 -->
+					<div id="tab5">
+						
+						<form id="tabForm5">
+						<fieldset  style="border: 2px ivory solid">
+							<legend style="border: 2px ivory solid; 
+								margin-left: 1em; padding: 0.2em 0.8em ">Military Service</legend>
+			  			<label for="name">Branch: </label><br>
+							<input id="mil1" type="text" name="mil1" required/> <br>
+							<br>
+							<label for="name">From: </label><br>
+							<input id="mil2" type="date" name="mil2" required/> <br>
+							<br>
+							<label for="name">To: </label><br>
+							<input id="mil3" type="date" name="mil3" required/> <br>
+							<br>
+							<label for="name">Rank at Discharge: </label><br>
+							<input id="mil4" type="text" name="mil4" required/> <br>
+							<br>
+							<label for="name">Type of Discharge: </label><br>
+							<input id="mil5" type="text" name="mil5" required /> <br>
+							<br> 
+							<label for="name">If other than honorable, explain: </label><br>
+							<input id="mil6" type="text" name="mil6"  /> <br>
+							<br>
+						</fieldset>	
+							<br>
+							<input type="button" value="Back" id="back5" name="back5"/>	
+							<input type="button" value="Continue" id="continue5" name="continue5"/>							
+						</form>
+					</div>  <!-- end of tab5 -->
+					<div id="tab6">
+						<fieldset  style="border: 2px ivory solid">
+						<legend style="border: 2px ivory solid; 
+							margin-left: 1em; padding: 0.2em 0.8em ">Disclaimer and Signature</legend>
+						
+				
+						<p> <i> I certify that my answers are true and complete to the best of my 
+						knowledge. If this application leads to employment, I understand that false 
+						or misleading information in my application or interview may result in my release.
+						</i></p>
+						<form id="tabForm6" style="border-width:5px;" style=" border-style:ridge;">
+							
+							<div id="work7">
+							
+								<label>I agree </label><br> <br>
+								<input type="checkbox" id="y9" name="lsss" value="yes" > Yes<br>
+								<input type="checkbox" id="n9" name="lsss" value="no" > No<br>								
+								<br />
+						
+							</div>
+							
+							<div class="hidden" id="auth7">
+							<label for="name">Electronic Signature: </label> <br>
+							<input id="sign" type="text" name="sign" required title="Electronic signature is required to submit your application"/> <br>
+							<label for="name">Date: </label> <br>
+							<input id="sign1" type="date" name="sign1" required title="Enter the date"/> <br>
+								
+								<br />
+							</div>   
+							</fieldset>
+							<br>
+							<input type="button" value="Back" id="back6" name="back6"/>	
+							<input type="button" value="Continue" id="continue6" name="continue6"/>							
+						</form>
+					</div>  <!-- end of tab6 -->
+						
+			</div> <!-- end of tabs container div -->
+	
+		</div> <!-- end of page div -->
+		<div id="dialog-confirm" title="Submit your application">
+			<p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;">
+			</span>By submitting this form you are affirming that all data entered is correct</p>
+		</div>
+	</body>
+</html>
+
+
+
+

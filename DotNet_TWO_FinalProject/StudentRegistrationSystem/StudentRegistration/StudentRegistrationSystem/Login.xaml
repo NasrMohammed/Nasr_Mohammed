@@ -1,0 +1,32 @@
+﻿<Window x:Class="StudentRegistrationSystem.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Login" Height="204.06" Width="386.175"
+        WindowStartupLocation="CenterScreen" Closing="Window_Closing" Loaded="Window_Loaded">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="lblUsername" Grid.Row="0" Grid.Column="0" Content="Username: " Margin="0,0,188,0"/>
+        <Label x:Name="lblPassword" Grid.Row="1" Grid.Column="0" Content="Password: " Margin="0,0,188,0"/>
+        <Label x:Name="lblPassConfirm" Grid.Row="2" Grid.Column="0" Content="Confirm Password: " Visibility="Hidden" Margin="0,0,188,0"/>
+        <TextBox x:Name="txtUsername" Grid.Row="0" Margin="117,5,5,5" />
+        <PasswordBox x:Name="txtPassword" Grid.Row="1" Margin="117,5,5,5" />
+        <PasswordBox x:Name="txtPassConfirm" Grid.Row="2" Margin="117,5,5,5" Visibility="Hidden" />
+        <Grid Grid.Row="3" Margin="112,0,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" x:Name="btnSubmit"  Content="Submit" Padding="10 0 10 0" Margin="5" RenderTransformOrigin="0.503,0.509" Click="btnSubmit_Click"/>
+            <Button Grid.Column="1" x:Name="btnCancel"  Content="Cancel" Padding="10 0 10 0" Margin="5" Click="btnCancel_Click" />
+        </Grid>
+        <CheckBox x:Name="chkNewUser" Content="New User" HorizontalAlignment="Left" Margin="5,5,0,0" Grid.Row="3" VerticalAlignment="Top" Checked="ChkNewUser_Checked" Unchecked="chkNewUser_Unchecked"/>
+    </Grid>
+</Window>

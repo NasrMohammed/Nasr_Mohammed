@@ -1,0 +1,51 @@
+* {
+	outline: none;
+}
+body {
+	font-family: Verdana, Arial, sans-serif;
+}
+
+#page {
+	width: 200px;
+	margin: auto;
+}
+
+.table {
+	display: table;
+}
+
+.tableRow {
+	display: table-row;
+}
+
+.tableCell {
+	display: table-cell;
+}
+
+#left {
+	width: 33%;
+}
+
+#right {
+	width: 66%;
+}
+
+#worksheet .section {
+	padding: 1ex 2ex;
+	margin: .5ex .5ex;
+}
+
+#right h1 {
+	color: #0074D0;
+	text-align: center;
+}
+
+#worksheet h5 {
+	margin-bottom: 1ex;
+}
+
+
+
+
+
+

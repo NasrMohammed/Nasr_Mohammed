@@ -1,0 +1,16 @@
+﻿<Window x:Class="StudentRegistrationSystem.AddMajor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AddMajor" Height="250" Width="650">
+
+    <Grid Margin="0,0,2,2">
+        <TextBox x:Name="txtMajorID" HorizontalAlignment="Left" Height="23" Margin="120,25,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160"/>
+        <Label Content="Major ID" HorizontalAlignment="Left" Margin="12,25,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.505,-0.055" Width="123" Height="28"/>
+        <TextBox x:Name="txtMajorName" HorizontalAlignment="Left" Height="23" Margin="120,55,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160"/>
+        <Label Content="Major Name" HorizontalAlignment="Left" Margin="12,55,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.505,-0.055" Width="123" Height="28"/>
+
+        <Button x:Name="btnAddMajor" Content="Add Major" HorizontalAlignment="Left" Margin="120,100,0,0" VerticalAlignment="Top" Width="160" Click="btnAddMajor_Click" Height="30"/>
+        <DataGrid x:Name="grdMajors" HorizontalAlignment="Left" Margin="301,25,0,0" VerticalAlignment="Top" Height="107" Width="312" SelectionChanged="grdStudents_SelectionChanged" SelectionMode="Single" />
+        <Button Content="Show Majors" HorizontalAlignment="Left" Margin="388,150,0,0" VerticalAlignment="Top" Width="160" Click="Major_Click" Height="30"/>
+    </Grid>
+</Window>

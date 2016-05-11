@@ -1,0 +1,329 @@
+* {
+	outline: none;
+
+}
+
+body {
+	font-family: Verdana, Arial, sans-serif;
+
+}
+
+#page {
+	width: 1080px;
+	margin: auto;
+	font-size: 15px;
+	background-color: #F5F3EC;
+}
+
+#mi {
+	margin-bottom: 10px;
+	width: 40px;
+}
+
+#fname {
+	margin-bottom: 5px;
+	width: 300px;
+	margin-bottom: 10px;
+}
+
+#lname {
+	width: 300px;
+	margin-bottom: 10px;
+}
+
+#address
+{
+	width:300px;
+	margin-bottom: 10px;
+}
+#apartment
+{
+	width:50px;
+	margin-bottom: 10px;
+}
+#city
+{	
+	margin-bottom: 10px;
+	width: 300px;
+}
+#state
+{	
+	margin-bottom: 10px;
+}
+#zip
+{
+	width:70px;
+	margin-bottom: 10px;
+}
+#phone
+{
+	margin-bottom: 10px;
+	width: 300px;
+
+}
+#email
+{
+	margin-bottom: 10px;
+	width: 300px;
+}
+#available
+{
+	width: 300px;
+	margin-bottom: 10px;
+}
+#social
+{
+	width: 300px;
+	margin-bottom: 10px;
+}
+#salary
+{
+	width: 300px;
+	margin-bottom: 10px;
+}
+#position
+{
+	width: 300px;
+	margin-bottom: 10px;
+}
+
+.red-star {
+    color: red;
+}
+
+#edu {	
+	width: 300px;
+}
+
+#edu1 {	
+	width: 300px;
+}
+#edu2 {	
+	width: 207px;	
+}
+
+#edu3 {	
+	width: 207px;	
+	margin-bottom: 10px;	
+}
+
+#edu4 {	
+	width: 300px;
+	margin-bottom: 10px;	
+}
+#edu5 {	
+	width: 300px;
+	margin-bottom: 10px;	
+}
+#edu6 {	
+	width: 207px;	
+	margin-bottom: 10px;	
+}
+#edu7 {	
+	width: 207px;	
+	margin-bottom: 10px;	
+}
+#edu8{	
+	width: 300px;
+	margin-bottom: 10px;	
+}
+#edu9 {	
+	width: 300px;
+	margin-bottom: 10px;	
+}
+#edu10 {	
+	width: 207px;	
+	margin-bottom: 10px;	
+}
+#edu11 {	
+	width: 207px;	
+	margin-bottom: 10px;	
+}
+#ref1{	
+	width: 300px;
+	margin-bottom: 10px;	
+}
+#ref2 {	
+	width: 300px;
+	margin-bottom: 10px;	
+}
+#ref3 {	
+	width: 300px;
+	margin-bottom: 10px;	
+}
+#ref4 {	
+	width: 300px;
+	margin-bottom: 10px;	
+}
+#ref5 {	
+	width: 300px;
+	margin-bottom: 10px;	
+}
+#ref01{	
+	width: 300px;
+	margin-bottom: 10px;	
+}
+#ref12 {	
+	width: 300px;
+	margin-bottom: 10px;	
+}
+#ref13 {	
+	width: 300px;
+	margin-bottom: 10px;	
+}
+#ref14 {	
+	width: 300px;
+	margin-bottom: 10px;	
+}
+#ref15 {	
+	width: 300px;
+	margin-bottom: 10px;	
+}
+#ref30{	
+	width: 300px;
+	margin-bottom: 10px;	
+}
+#ref22 {	
+	width: 300px;
+	margin-bottom: 10px;	
+}
+#ref33 {	
+	width: 300px;
+	margin-bottom: 10px;	
+}
+#ref44 {	
+	width: 300px;
+	margin-bottom: 10px;	
+}
+#ref55 {	
+	width: 300px;
+	margin-bottom: 10px;	
+}
+#comp1 {	
+	width: 300px;
+	margin-bottom: 10px;	
+}
+#comp2 {	
+	width: 300px;
+	margin-bottom: 10px;	
+}
+#comp3 {	
+	width: 300px;
+	margin-bottom: 10px;	
+}
+#comp4 {	
+	width: 300px;
+	margin-bottom: 10px;	
+}
+#comp5{	
+	width: 300px;
+	margin-bottom: 10px;	
+}
+#comp6 {	
+	width: 207px;
+	margin-bottom: 10px;	
+}
+#comp7{	
+	width: 207px;
+	margin-bottom: 10px;	
+}
+#comp8 {	
+	width: 207px;
+	margin-bottom: 10px;	
+}
+#comp9 {	
+	width: 207px;
+	margin-bottom: 10px;	
+}
+#comp10 {	
+	width: 207px;
+	margin-bottom: 10px;	
+}
+#comp11 {	
+	width: 300px;
+	margin-bottom: 10px;	
+}
+
+#tabs .error {
+	color: red;
+}
+
+#com1 {	
+	width: 300px;
+	margin-bottom: 10px;	
+}
+#com2 {	
+	width: 300px;
+	margin-bottom: 10px;	
+}
+#com3 {	
+	width: 300px;
+	margin-bottom: 10px;	
+}
+#com4 {	
+	width: 300px;
+	margin-bottom: 10px;	
+}
+#com5{	
+	width: 300px;
+	margin-bottom: 10px;	
+}
+#com6 {	
+	width: 207px;
+	margin-bottom: 10px;	
+}
+#com7{	
+	width: 207px;
+	margin-bottom: 10px;	
+}
+#com8 {	
+	width: 207px;
+	margin-bottom: 10px;	
+}
+#com9 {	
+	width: 207px;
+	margin-bottom: 10px;	
+}
+#com10 {	
+	width: 207px;
+	margin-bottom: 10px;	
+}
+#com11 {	
+	width: 300px;
+	margin-bottom: 10px;	
+}
+#mil1{	
+	width: 300px;
+	margin-bottom: 10px;	
+}
+#mil2 {	
+	width: 207px;
+	margin-bottom: 10px;	
+}
+#mil3 {	
+	width: 207px;
+	margin-bottom: 10px;	
+}
+#mil4 {	
+	width: 300px;
+	margin-bottom: 10px;	
+}
+#mil5 {	
+	width: 300px;
+	margin-bottom: 10px;	
+}
+#mil6 {	
+	width: 300px;
+	margin-bottom: 10px;	
+}
+#sign {	
+	width: 300px;
+	margin-bottom: 10px;	
+}
+#sign1 {	
+	width: 207px;
+	margin-bottom: 10px;	
+}
+
+
+

@@ -1,0 +1,280 @@
+
+body{
+	margin:0;
+	font-family: Arial,Helvetica,freesans,sans-serif;
+	background-color: ##F5F3EC;
+}
+
+#topbar{
+	background-color:#F5F3EC;
+	width:100%;
+	height: 132px;	
+	padding-bottom: 35px;
+}
+
+.fixedwidth{
+	width:1080px;
+	margin: 0 auto;	 
+		
+}
+
+#main{
+	background-color:#F5F3EC;
+	width:100%;
+	height: 626px;
+	color:white;
+	padding-bottom: 35px;
+}
+	
+.break{
+	clear: both;
+}
+		
+#contentOne{		
+	background-color: #F5F3EC;	
+	height: 330px;
+	padding-bottom: 35px;
+	
+}
+ #selfStorage{	
+	position: relative;
+	background-color: #F5F3EC;
+	width: 300px;
+	float: left;
+	height: 340px;	
+	padding-right: 20px;
+	margin-left: 10px;
+	padding-left: 20px;
+	border-radius: 15px;
+	font-size: 0.90em;	
+	border: solid #E6E0F8 2px;
+}
+
+#selfStorage h1 {	
+	color: #276099;
+	font-size: 1.5em;
+	text-decoration: underline;
+}
+#storageImage  {	
+	float: left;
+	padding-right: 15px;		
+}
+#selfStorageText + p{
+	float:right;		
+}
+#trailerHitches {
+	position: relative;
+	background-color: #F5F3EC;
+	width: 300px;
+	float: left;
+	height: 340px;	
+	padding-right: 20px;
+	margin-left: 10px;
+	padding-left: 20px;
+	border-radius: 15px;
+	font-size: 0.90em;	
+	border: solid #E6E0F8 2px;
+}
+#trailer h1 {	
+	color: #276099;
+	font-size: 1.5em;
+	text-decoration: underline;
+}
+#trailerSch h4 {	
+	color: #276099;
+	text-decoration: underline;
+	float: left;
+	position: relative;
+	TOP: -15PX;
+}
+#trailerAcc h4 {	
+	color: #276099;
+	text-decoration: underline;
+	position: relative;
+	TOP: -1PX;
+	left: 20px;
+	
+}
+#trailerImage  {	
+	float: left;
+	padding-right:35px;		
+}
+#trailerText + p{
+	float: left;		
+}
+#trailerText span{
+	font-weight: bold;	
+	color: #276099;
+	text-decoration: underline;
+}
+#movingSupplies{
+	position: relative;
+	background-color: #F5F3EC;
+	width: 300px;
+	float: left;
+	height: 340px;	
+	padding-right: 20px;
+	margin-left: 10px;
+	padding-left: 20px;
+	border-radius: 15px;
+	font-size: 0.90em;	
+	border: solid #E6E0F8 2px;
+}
+#movingSupplies h1 {	
+	color: #276099;
+	font-size: 1.5em;
+	text-decoration: underline;
+}
+#movingeImage  {	
+	float: left;
+	padding-right: 15px;		
+}
+#movingText {	
+	line-height: 2em;
+}
+a {
+	text-decoration: underline;
+}
+	
+a:hover{
+	color: blue ;		
+}
+	
+
+#contentTwo{	
+	background-color: #F5F3EC;	
+	height: 330px;
+	padding-bottom: 35px;
+}
+#ubox{
+	position: relative;
+	background-color: #F5F3EC;
+	width: 300px;
+	float: left;
+	height: 340px;	
+	padding-right: 20px;
+	margin-left: 10px;
+	padding-left: 20px;
+	border-radius: 15px;
+	font-size: 0.90em;	
+	border: solid #E6E0F8 2px;
+}
+#ubox h1 {	
+	color: #276099;
+	font-size: 1.5em;
+	text-decoration: underline;
+}
+#uboxImage  {	
+	float: left;
+	padding-right: 15px;		
+}
+#uboxText {	
+	line-height: 2em;
+}
+
+#Propane{
+	position: relative;
+	background-color: #F5F3EC;
+	width: 300px;
+	float: left;
+	height: 340px;	
+	padding-right: 20px;
+	margin-left: 10px;
+	padding-left: 20px;
+	border-radius: 15px;
+	font-size: 0.90em;	
+	border: solid #E6E0F8 2px;
+}
+#Propane h1 {	
+	color: #276099;
+	font-size: 1.5em;
+	text-decoration: underline;
+}
+#propaneImage  {	
+	float: left;
+	padding-right: 15px;		
+}
+#propaneText {	
+	line-height: 2em;
+}
+#movingLabor{
+	position: relative;
+	background-color: #F5F3EC;
+	width: 300px;
+	float: left;
+	height: 340px;	
+	padding-right: 20px;
+	margin-left: 10px;
+	padding-left: 20px;
+	border-radius: 15px;
+	font-size: 0.90em;	
+	border: solid #E6E0F8 2px;
+}
+#movingLabor h1 {	
+	color: #276099;
+	font-size: 1.5em;
+	text-decoration: underline;
+}
+#movingLaborImage  {	
+	float: left;
+	padding-right: 15px;		
+}
+#movingLaborText {	
+	line-height: 2em;
+}
+#footerOne{	
+	width:100%;
+	background-color:#F5F3EC;
+	height: 550px;
+}
+#footerOne table  {
+	
+	background-color: #FFFFFF;
+}
+	
+#footerOne table tr:first-child {  
+		font-size:20px;
+		font-weight:bold;
+		color: #211616;		
+}		
+#footerOne table {  
+		font-size:16px;
+		color: #4a81e0;
+		
+}	
+#tablefixed {
+
+	margin-left: 15px;
+	margin-right: 15px;
+}
+#footerTwo{	
+	width:100%;
+	background-color:#F5F3EC;
+	height: 250px;
+}
+#footerThree{	
+	width:100%;
+	background-color:#F5F3EC;
+	height: 250px;
+}
+.grad1 {
+    height: 340px;
+    background: -webkit-linear-gradient(#c2dfef, #FFFFFF); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#c2dfef, #FFFFFF); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#c2dfef, #FFFFFF); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#c2dfef, #FFFFFF); /* Standard syntax (must be last) */
+}
+#propaneLabel {
+	padding-bottom: 10px;
+	
+}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

@@ -1,0 +1,20 @@
+﻿<Window x:Class="StudentRegistrationSystem.AddSection"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AddSection" Height="250" Width="750">
+    <Grid Margin="0,0,11,6">
+
+        <TextBox x:Name="txtSectionID" HorizontalAlignment="Left" Height="23" Margin="110,25,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160"/>
+        <Label Content="Section ID" HorizontalAlignment="Left" Margin="12,25,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.505,-0.055" Width="123" Height="28"/>
+        <TextBox x:Name="txtUserID" HorizontalAlignment="Left" Height="23" Margin="110,55,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160"/>
+        <Label Content="User ID" HorizontalAlignment="Left" Margin="12,55,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.505,-0.055" Width="123" Height="28"/>
+        <TextBox x:Name="txtTermID" HorizontalAlignment="Left" Height="23" Margin="110,85,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160"/>
+        <Label Content="Term ID" HorizontalAlignment="Left" Margin="12,85,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.505,-0.055" Width="123" Height="28"/>
+        <TextBox x:Name="txtLocationID" HorizontalAlignment="Left" Height="23" Margin="110,115,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160"/>
+        <Label Content="Location ID" HorizontalAlignment="Left" Margin="12,115,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.505,-0.055" Width="123" Height="28"/>
+
+        <Button x:Name="btnAddSection" Content="Add Section" HorizontalAlignment="Left" Margin="110,160,0,0" VerticalAlignment="Top" Width="138" Click="btnAddSection_Click" Height="30"/>
+        <DataGrid x:Name="grdSections" HorizontalAlignment="Left" Margin="307,24,0,0" VerticalAlignment="Top" Height="114" Width="411"  SelectionMode="Single" />
+        <Button Content="Show Section" HorizontalAlignment="Left" Margin="461,160,0,0" VerticalAlignment="Top" Width="138" Click="Section_Click" Height="30"/>
+    </Grid>
+</Window>
