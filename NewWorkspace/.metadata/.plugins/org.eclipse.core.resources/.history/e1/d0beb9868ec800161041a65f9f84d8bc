@@ -1,0 +1,14 @@
+#Kevin
+Feature: Adding user to system
+	As an Syncpanel2 Administrator
+	I want to make sure I can add users to the system
+	In order to ensure core functionality is unchanged
+	
+	Background: Must be logged in and in the correct testing area
+		Given I am on the Syncpanel2 landing page
+		Then I log in
+		And I navigate to the correct testing location
+	
+	Scenario: Adding user to syncpanel2
+		Given I click the Add User button
+		

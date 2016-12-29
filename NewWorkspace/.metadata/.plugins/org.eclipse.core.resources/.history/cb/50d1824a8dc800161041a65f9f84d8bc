@@ -1,0 +1,7 @@
+#Author: Kevin Gallagher
+#Author: Nasr Mohammed
+#Author: Wesley Parriott
+Feature: Basic smoke test of the User Management section
+	As a Syncbak Administrator
+	I want to test the User Management section
+	In order to make sure its functioning well for my clients
