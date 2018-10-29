@@ -3,9 +3,7 @@
 
 Hello Everyone;
 
-I'm Nasr Mohammed this is my Repository  where I can put all my projects.
+My name is Nasr Mohammed, this is my Repo.
 
-
-Thanks for your concern;
-
+Thanks,
 Nasr
